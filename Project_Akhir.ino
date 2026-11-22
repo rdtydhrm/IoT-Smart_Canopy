@@ -16,13 +16,13 @@ const int PIN_SERVO    = 18;
 const int PIN_BUZZER   = 23;  // buzzer aktif
 
 // ---------- KALIBRASI (WAJIB DICEK SAAT HARDWARE JADI) ----------
-const int  RAIN_WET_BELOW     = 2000;   // nilai ADC di bawah ini = basah
+const int  RAIN_WET_BELOW     = 2500;   // nilai ADC di bawah ini = basah
 const bool LDR_DARK_IS_LOW    = true;   // ubah ke false jika nilai LDR naik saat gelap
 const int  LDR_DARK_THRESHOLD = 1000;
 const bool CLOSE_ON_DARK      = true;   // gelap/mendung ikut menutup atap
 const int  ANGLE_OPEN         = 0;
 const int  ANGLE_CLOSED       = 90;
-const unsigned long REOPEN_DELAY_MS   = 30000;  // aman selama ini baru atap dibuka
+const unsigned long REOPEN_DELAY_MS   = 10000;  // aman selama ini baru atap dibuka
 const unsigned long SEND_INTERVAL_MS  = 30000;  // kirim berkala (mode edge)
 const bool BASELINE_MODE      = false;  // true = kirim data mentah tiap 2 detik (untuk tabel pembanding)
 
